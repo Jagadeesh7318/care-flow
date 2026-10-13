@@ -17,3 +17,8 @@ def log(case_id,activity,time,doctor,age_group):
                  "event_time":time.strftime("%Y-%m-%d %H:%M:%S"),
                  "doctor":doctor,
                  "age":age_group})
+for i in range(NUM_PATIENTS):
+    case_id = f"case{i:05d}"
+    doctor = random.choice(DOCTORS)
+    age_group = random.choice(AGE_GROUPS)
+    time = datetime(2026,1,1)+timedelta(minutes=random.randint(0,60*24*365))
