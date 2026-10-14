@@ -21,4 +21,10 @@ for i in range(NUM_PATIENTS):
     case_id = f"case{i:05d}"
     doctor = random.choice(DOCTORS)
     age_group = random.choice(AGE_GROUPS)
-    time = datetime(2026,1,1)+timedelta(minutes=random.randint(0,60*24*365))
+    time = datetime(2026,1,1)+timedelta(minutes=random.randint(0,60*24*90))
+    log(case_id,"REGISTRATION",time,doctor,age_group)
+    time += timedelta(minutes=random.randint(5,20))
+    log(case_id,"TRIAGE",time,doctor,age_group)
+    time += timedelta(minutes=random.randint(10,30))
+    log(case_id,"X-RAY",time,doctor,age_group)
+    time += timedelta(minutes=random.randint(15,40))
