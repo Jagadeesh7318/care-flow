@@ -28,3 +28,9 @@ for i in range(NUM_PATIENTS):
     time += timedelta(minutes=random.randint(10,30))
     log(case_id,"X-RAY",time,doctor,age_group)
     time += timedelta(minutes=random.randint(15,40))
+    if random.random()< LOOPBACK_RATE:
+        log(case_id,"TRIAGE",time,doctor,age_group)
+        time += timedelta(minutes=random.randint(20,50))
+        log(case_id,"Doctor Consultation",time,doctor,age_group)
+        time += timedelta(minutes=random.randint(10,30))
+        log(case_id,"Discharge",time,doctor,age_group)
