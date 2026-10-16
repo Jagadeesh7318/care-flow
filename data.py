@@ -34,3 +34,6 @@ for i in range(NUM_PATIENTS):
         log(case_id,"Doctor Consultation",time,doctor,age_group)
         time += timedelta(minutes=random.randint(10,30))
         log(case_id,"Discharge",time,doctor,age_group)
+        df=pd.DataFrame(rows)
+        df=pd.concat([df,df.sample(50,random_state=1)],ignore_index=True)
+        df.to_csv("ehr_raw.csv",index=False)
