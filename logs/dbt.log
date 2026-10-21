@@ -1,0 +1,82 @@
+[0m18:33:34.318808 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002117FB0FD70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000211047B79B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000211047FFA40>]}
+
+
+============================== 18:33:34.326020 | 8bba2e57-5cd5-4b8b-91e6-dca73ee281f5 ==============================
+[0m18:33:34.326020 [info ] [MainThread]: Running with dbt=1.13.0-b1
+[0m18:33:34.327022 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\USER\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt init careflow_dbt', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m18:33:34.329853 [debug] [MainThread]: Tracking: tracking
+[0m18:33:34.383098 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\USER\.dbt
+[0m18:33:34.387109 [debug] [MainThread]: Starter project path: C:\Users\USER\AppData\Roaming\Python\Python312\site-packages\dbt\include\starter_project
+[0m18:33:34.444994 [info ] [MainThread]: Setting up your profile.
+[0m18:37:12.413745 [info ] [MainThread]: Profile careflow_dbt written to C:\Users\USER\.dbt\profiles.yml using target's profile_template.yml and your supplied values.
+[0m18:37:12.420651 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m18:37:12.421655 [info ] [MainThread]: dbt version: 1.13.0-b1
+[0m18:37:12.422658 [info ] [MainThread]: python version: 3.12.4
+[0m18:37:12.422658 [info ] [MainThread]: python path: C:\Program Files\Python312\python.exe
+[0m18:37:12.423652 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m18:37:12.505584 [info ] [MainThread]: Using profiles dir at C:\Users\USER\.dbt
+[0m18:37:12.507577 [info ] [MainThread]: Using profiles.yml file at C:\Users\USER\.dbt\profiles.yml
+[0m18:37:12.507577 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\USER\Desktop\careflow\care-flow\careflow_dbt\dbt_project.yml
+[0m18:37:12.508587 [info ] [MainThread]: adapter type: bigquery
+[0m18:37:12.508587 [info ] [MainThread]: adapter version: 1.12.1
+[0m18:37:12.614422 [info ] [MainThread]: Configuration:
+[0m18:37:12.614422 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:37:12.615505 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:37:12.615505 [info ] [MainThread]: Required dependencies:
+[0m18:37:12.616430 [debug] [MainThread]: Executing "git --help"
+[0m18:37:12.681849 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:37:12.682948 [debug] [MainThread]: STDERR: "b''"
+[0m18:37:12.682948 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:37:12.683863 [info ] [MainThread]: Connection:
+[0m18:37:12.683863 [info ] [MainThread]:   method: oauth
+[0m18:37:12.683863 [info ] [MainThread]:   database: careflow-511810
+[0m18:37:12.684847 [info ] [MainThread]:   execution_project: careflow-511810
+[0m18:37:12.684847 [info ] [MainThread]:   schema: careflow
+[0m18:37:12.684847 [info ] [MainThread]:   location: US
+[0m18:37:12.685885 [info ] [MainThread]:   priority: interactive
+[0m18:37:12.685885 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m18:37:12.685885 [info ] [MainThread]:   reservation: None
+[0m18:37:12.686846 [info ] [MainThread]:   impersonate_service_account: None
+[0m18:37:12.686846 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m18:37:12.686846 [info ] [MainThread]:   job_retries: 1
+[0m18:37:12.687847 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m18:37:12.687847 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m18:37:12.687847 [info ] [MainThread]:   job_link_info_level_log: False
+[0m18:37:12.688848 [info ] [MainThread]:   timeout_seconds: 300
+[0m18:37:12.688848 [info ] [MainThread]:   client_id: None
+[0m18:37:12.689849 [info ] [MainThread]:   token_uri: None
+[0m18:37:12.689849 [info ] [MainThread]:   compute_region: None
+[0m18:37:12.689849 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m18:37:12.690850 [info ] [MainThread]:   gcs_bucket: None
+[0m18:37:12.690850 [info ] [MainThread]:   dataproc_batch: None
+[0m18:37:12.691866 [info ] [MainThread]: Registered adapter: bigquery=1.12.1
+[0m18:37:13.288453 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m18:37:13.289356 [debug] [MainThread]: On debug: select 1 as id
+[0m18:37:13.290443 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:37:17.632225 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=careflow-511810&j=bq:US:181421c5-aaa5-4198-9e6c-9a36797ea54b&page=queryresults
+[0m18:37:18.428513 [debug] [MainThread]: SQL status: OK in 0.795 seconds
+[0m18:37:22.454510 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m18:37:22.456624 [info ] [MainThread]: [32mAll checks passed![0m
+[0m18:37:22.456624 [info ] [MainThread]: Your new dbt project "careflow_dbt" was created!
+Initialized new project in C:\Users\USER\Desktop\careflow\care-flow\careflow_dbt\careflow_dbt
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:37:22.458650 [debug] [MainThread]: Command `dbt init` succeeded at 18:37:22.458650 after 228.32 seconds
+[0m18:37:22.459649 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:37:22.460648 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000211027A1D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000211047FFA40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000211047FF3E0>]}
+[0m18:37:22.461648 [debug] [MainThread]: Flushing usage events
+[0m18:37:24.386617 [debug] [MainThread]: An error was encountered while trying to flush usage events
