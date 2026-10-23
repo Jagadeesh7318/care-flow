@@ -1,8 +1,6 @@
-yaml
-
-version:2
+version: 2
 sources:
-  - name:careflow
+  - name: careflow
     schema: careflow
     tables:
-      - name: raw_events
+      - name: raw_events 
