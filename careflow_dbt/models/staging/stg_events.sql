@@ -1,6 +1,6 @@
 select
    upper(trim(patient_id)) as case_id,
-   initcap(trim(activity)) as activity,
+   initcap(trim(activity)) as activity_name,
    safe_cast(event_time as timestamp) as event_timestamp,
    doctor,
    age  as age_group
