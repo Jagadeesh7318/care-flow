@@ -1,0 +1,7 @@
+activity_name,next_activity,patients,avg_minutes,max_minutes
+Triage,Doctor Consultation,2034,34.9,50.0
+X-Ray,Doctor Consultation,2966,27.7,40.0
+X-Ray,Triage,2034,27.4,40.0
+Doctor Consultation,Discharge,5000,20.0,30.0
+Triage,X-Ray,5000,20.0,30.0
+Registration,Triage,5000,12.5,20.0
